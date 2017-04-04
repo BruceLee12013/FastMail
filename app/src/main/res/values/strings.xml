@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FastMail</string>
+    <string name="fast_email_from">物品从哪里寄出</string>
+    <string name="goods_weight_email">物品重量</string>
+    <string name="down_limit_email">5公斤以下</string>
+    <string name="received_email_now">立即取件</string>
+    <string name="price_email_instruction">价格说明</string>
+</resources>

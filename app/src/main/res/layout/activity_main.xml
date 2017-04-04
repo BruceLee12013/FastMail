@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/schedule_icon_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="闪送"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="-8dp"
+        custom:selected_color="#FF5500"
+        custom:selected_height="3dp"
+        custom:selected_padding_left="2dp"
+        custom:selected_padding_right="2dp"
+        custom:selected_width="16dp"
+        custom:shape="rect"
+        custom:unselected_color="#55333333"
+        custom:unselected_height="3dp"
+        custom:unselected_padding_left="2dp"
+        custom:unselected_padding_right="2dp"
+        custom:unselected_width="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="17dp"
+        android:background="@android:color/white"
+        >
+        <LinearLayout
+            android:id="@+id/goods_email_from"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_home_bg"
+            android:orientation="horizontal"
+            android:layout_height="46dp">
+            <TextView
+                android:layout_width="22dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/icon_localj"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fast_email_from"
+                android:textSize="16sp"
+                android:layout_marginLeft="12dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/goods_email_to"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_home_bg"
+            android:orientation="horizontal"
+            android:layout_height="46dp">
+            <TextView
+                android:layout_width="22dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/icon_locals"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fast_email_from"
+                android:textSize="16sp"
+                android:layout_marginLeft="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/white"
+            android:padding="17dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_weight_email"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="#101010"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/down_limit_email"/>
+            <TextView
+                android:layout_width="6dp"
+                android:layout_height="11dp"
+                android:background="@drawable/right_img"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e7e8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:padding="17dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_weight_email"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/received_email_now"/>
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:background="@drawable/right_img"/>
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom|center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_email_instruction"/>
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/right_img"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
